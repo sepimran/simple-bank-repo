@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Baper Bank</title>
+</head>
+<body>
+
+    <header class="header-area py-12">
+        <div class="container-xl mx-auto">
+            <h1 class="text-center text-5xl">Welcome To Your <span class="font-semibold text-cyan-500">Functional bank</span> </h1>
+        </div>
+    </header>
+
+    <section class="form-area">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-3 gap-6">
+                <div class="bg-green-300 p-10 rounded-xl">
+                    <h2 class="text-3xl mb-3">Deposit</h2>
+                    <h3 class="text-5xl">$<span id="deposit-total">00</span></h3>
+                </div>
+
+                <div class="bg-pink-300 p-10 rounded-xl">
+                    <h2 class="text-3xl mb-3">Widraw</h2>
+                    <h3 class="text-5xl">$<span id="widraw-amout">00</span></h3>
+                </div>
+
+                <div class="bg-orange-300 p-10 rounded-xl">
+                    <h2 class="text-3xl mb-3">Blance</h2>
+                    <h3 class="text-5xl">$<span id="total-blance">12000</span></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto mt-6">
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-purple-300 p-10 rounded-xl">
+                    <h2 class="text-3xl mb-3">Please Deposit</h2>
+                    <input id="deposit-filed" type="number" class="block w-full mb-4 p-3 px-5 rounded-md shadow-sm" placeholder="Please Enter a Amout">
+                    <button id="btn-deposit" class="px-4 py-2 font-semibold hover:bg-sky-400 bg-sky-500 text-white rounded-md shadow-sm" >Deposit</button>
+                </div>
+
+                <div class="bg-blue-300 p-10 rounded-xl">
+                    <h2 class="text-3xl mb-3">Please Widraw</h2>
+                    <input id="widraw-field" type="number" class="block w-full mb-4 p-3 px-5 rounded-md shadow-sm" placeholder="Please Enter a Amout">
+                    <button id="widraw-btn" class="px-4 py-2 font-semibold hover:bg-sky-400   bg-sky-500 text-white rounded-md shadow-sm" >Winraw</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+
+
+    <script src="deposit.js"></script>
+
+
+    <!-- <script src="widrow.js"></script> -->
+    
+</body>
+</html>
