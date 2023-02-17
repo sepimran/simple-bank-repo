@@ -11,6 +11,8 @@
 
     6.Get current balance
 
+    7. calculate the balance and set the value to Total balance
+
 */ 
 document.getElementById('btn-deposit').addEventListener('click', function(){
     const depositField = document.getElementById('deposit-filed');
@@ -29,7 +31,6 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
     //step 5
 
     const newDepositTotal = preDepositTotal + newDepositAmount;
-
     preDepositElement.innerText = newDepositTotal;
 
     //step 6
@@ -37,7 +38,9 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
     const preBlanceElementString = preBlanceElement.innerText;
     const preBlanceTotal = parseFloat(preBlanceElementString);
 
-    preBlanceElement.innerText = preBlanceTotal + newDepositAmount;
+    //step 7
+    const newBlanceTotalAmout = preBlanceTotal + newDepositAmount;
+    preBlanceElement.innerText = newBlanceTotalAmout;
 
 
 
