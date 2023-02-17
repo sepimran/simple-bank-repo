@@ -32,6 +32,12 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
 
     preDepositElement.innerText = newDepositTotal;
 
+    //step 6
+    const preBlanceElement = document.getElementById('blance-total');
+    const preBlanceElementString = preBlanceElement.innerText;
+    const preBlanceTotal = parseFloat(preBlanceElementString);
+
+    preBlanceElement.innerText = preBlanceTotal + newDepositAmount;
 
 
 
